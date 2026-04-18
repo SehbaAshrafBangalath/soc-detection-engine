@@ -1,0 +1,9 @@
+✔ NORMAL: No suspicious activity
+⚠️ HIGH ALERT: Suspicious Login Activity
+2026-04-18 15:39:01 | HIGH | Suspicious Login Activity | FAIL_COUNT=5
+2026-04-18 16:41:52 | HIGH | Suspicious Login Activity | FAIL_COUNT=5
+2026-04-18 16:41:52 | MEDIUM | Abnormal input size detected
+2026-04-18 16:41:52 | INFO | Normal activity
+2026-04-18 16:49:16 | HIGH | Suspicious Login Activity | FAIL_COUNT=5
+2026-04-18 16:49:16 | MEDIUM | Abnormal input size detected
+2026-04-18 16:49:16 | INFO | Normal activity
