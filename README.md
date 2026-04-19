@@ -16,44 +16,79 @@ This project simulates a lightweight SIEM system by:
 
 ---
 
-##  Detection Capabilities
+## Security Objectives
 
-###  Brute Force Detection
-- Monitors repeated failed login attempts
-- Flags suspicious authentication patterns
+- Detect brute force authentication attempts
+- Identify abnormal or malicious input patterns
+- Monitor rapid or automated request behavior
+- Generate structured security alerts for analysis
 
-###  Abnormal Input Detection
-- Detects:
-  - Long/malicious inputs
-  - XSS patterns (`<script>`)
-  - SQL Injection (`OR 1=1`, `--`)
-
-###  Rapid Action Detection
-- Identifies high-frequency requests
-- Detects bot/flood-like behavior
 
 ---
 
+
 ## Architecture
+
+Logs (Input Sources)
+        ↓
+Detection Engine (siem_engine.py)
+        ↓
+Rule-Based Analysis (SOC Rules)
+        ↓
+Alert Generation System
+        ↓
+SOC Report / Outputs
+
 
 </> Markdown
 ## 📁 Project Structure
 
 ![Structure](screenshots/tree.png)
 
+🔍 Detection Modules
+🔴 1. Brute Force Detection
+
+Detects repeated failed authentication attempts from a single source IP.
+
+Logic:
+
+Counts FAIL occurrences
+Triggers alert if threshold exceeded
+
+Outcome:
+
+Identifies potential password-guessing attacks
+🟡 2. Abnormal Input Detection
+
+Detects suspicious payloads in input logs.
+
+Examples detected:
+
+<script> injection attempts
+SQL injection patterns (OR 1=1, --)
+Excessively long input strings
+
+Outcome:
+
+Identifies potential XSS / Injection attacks
+⚡ 3. Rapid Action Detection
+
+Detects unusually high-frequency request activity.
+
+Behavior simulated:
+
+Multiple rapid REQUEST events from same IP
+
+Outcome:
+
+Identifies bot-like or automated traffic patterns
 
 ▶️ How to Run
 PYTHONPATH=. python3 engine/siem_engine.py
 
 
 📊 Sample Output
-===== SOC ENGINE STARTED =====
-
-===== SOC ALERTS =====
-2026-04-18 16:41:52 | HIGH | Suspicious Login Activity | FAIL_COUNT=5
-2026-04-18 16:41:52 | MEDIUM | Abnormal input size detected
-2026-04-18 16:41:52 | INFO | Normal activity
-
+![Engine Run](02_soc_engine_run.png.png)
 
 📸 Screenshots
 🔹 Engine Execution
