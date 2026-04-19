@@ -107,7 +107,6 @@ The system ingests raw security logs from three independent attack surfaces, nor
 
 ## 📁 Project Structure
 
-![Project Tree Structure](screenshots/tree.png)
 
 ```
 soc-detection-engine/
@@ -141,7 +140,7 @@ soc-detection-engine/
 
 **Simulated Log — `logs/auth_logs.txt`:**
 
-![Brute Force Auth Log](screenshots/bruteforce_log.png)
+
 
 ```
 192.168.1.10 FAIL
@@ -235,16 +234,7 @@ tags:
 
 ![Abnormal Input Log](screenshots/log_io_abnormal_input.png)
 
-```
-192.168.1.10 OK
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!111222324675687903fgtthffrryhhhn
-192.168.1.10 OK
-<script>alert(1)</script>
-192.168.1.10 OK
-' OR 1=1 --
-192.168.1.10 OK
-NORMAL_INPUT_TEST
-```
+
 
 **Detection Rule — `rules/anomaly_rules.py`:**
 
