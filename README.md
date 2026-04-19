@@ -38,28 +38,8 @@ This project simulates a lightweight SIEM system by:
 
 </> Markdown
 ## 📁 Project Structure
-soc_project/
-│
-├── engine/              # SOC processing engine
-│   └── siem_engine.py
-│
-├── logs/                # Simulated attack logs
-│   ├── auth_logs.txt
-│   ├── abnormal_input.log
-│   └── rapid_action.log
-│
-├── rules/               # Detection rules (SIEM logic)
-│   ├── brute_force_rules.py
-│   ├── anomaly_rules.py
-│   └── rapid_action_rules.py
-│
-├── outputs/             # Generated alerts
-│   └── alerts.txt
-│
-├── report/              # SOC summary report
-│   └── SOC_Report.md
-│
-└── screenshots/         # Evidence of execution
+
+![Structure](screenshots/tree.png)
 
 
 ▶️ How to Run
