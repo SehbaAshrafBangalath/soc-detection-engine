@@ -276,7 +276,7 @@ tags:
 
 > **Screenshot — Rapid Action Log**
 
-![Rapid Action Log](screenshots/rapid_action_log.png)
+![Rapid Action Log](screenshots/rapid_log.png)
 
 ```
 192.168.1.10 REQUEST  ← ×20 entries
@@ -384,7 +384,7 @@ The logs clearly show `192.168.1.10` as the source of all activity, but detectio
 
 > Full engine run showing SOC ENGINE STARTED banner and alert output to terminal.
 
-![Engine Run](screenshots/engine_run.png)
+![Engine Run](screenshots/02_soc_engine_run.png)
 
 ---
 
@@ -392,7 +392,7 @@ The logs clearly show `192.168.1.10` as the source of all activity, but detectio
 
 > Contents of `outputs/alerts.txt` showing multiple timestamped runs and correct severity classification across all three detectors.
 
-![Alert Output](screenshots/alert_output.png)
+![Alert Output](screenshots/03_alerts_output.png)
 
 ```
 ✔ NORMAL: No suspicious activity
@@ -412,7 +412,7 @@ The logs clearly show `192.168.1.10` as the source of all activity, but detectio
 
 > `logs/auth_logs.txt` — five consecutive FAIL entries from 192.168.1.10 correctly triggering HIGH severity.
 
-![Brute Force Log](screenshots/auth_logs.png)
+![Brute Force Log](screenshots/bruteforce_logs.png)
 
 ---
 
@@ -420,7 +420,7 @@ The logs clearly show `192.168.1.10` as the source of all activity, but detectio
 
 > `logs/abnormal_input.log` — contains oversized payload, XSS script tag, and SQL injection string.
 
-![Abnormal Input Log](screenshots/abnormal_input_log.png)
+![Abnormal Input Log](screenshots/alog_io_bnormal_input_log.png)
 
 ---
 
@@ -428,7 +428,7 @@ The logs clearly show `192.168.1.10` as the source of all activity, but detectio
 
 > `logs/rapid_action.log` — 20 sequential REQUEST entries from 192.168.1.10 simulating bot-driven traffic.
 
-![Rapid Action Log](screenshots/rapid_action_log.png)
+![Rapid Action Log](screenshots/rapid_log.png)
 
 ---
 
