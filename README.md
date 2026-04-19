@@ -141,7 +141,7 @@ soc-detection-engine/
 
 **Simulated Log — `logs/auth_logs.txt`:**
 
-![Brute Force Auth Log](screenshots/bruteforce_logs.png)
+![Brute Force Auth Log](screenshots/bruteforce_log.png)
 
 ```
 192.168.1.10 FAIL
