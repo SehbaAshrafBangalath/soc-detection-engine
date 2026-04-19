@@ -137,7 +137,7 @@ soc-detection-engine/
 
 > **Screenshot — Brute Force Log**
 
-![Brute Force Auth Log](screenshots/auth_logs.png)
+![Brute Force Auth Log](screenshots/bruteforce_logs.png)
 
 ```
 192.168.1.10 FAIL
@@ -202,7 +202,7 @@ tags:
 
 > **Screenshot — Abnormal Input Log**
 
-![Abnormal Input Log](screenshots/abnormal_input_log.png)
+![Abnormal Input Log](screenshots/log_io_abnormal_input_log.png)
 
 ```
 192.168.1.10 OK
