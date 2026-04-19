@@ -29,6 +29,9 @@ This project simulates a lightweight SIEM system by:
 
 ## Architecture
 
+## 🏗️ System Architecture
+
+```text
 Logs (Input Sources)
         ↓
 Detection Engine (siem_engine.py)
@@ -38,6 +41,8 @@ Rule-Based Analysis (SOC Rules)
 Alert Generation System
         ↓
 SOC Report / Outputs
+
+---
 
 
 </> Markdown
