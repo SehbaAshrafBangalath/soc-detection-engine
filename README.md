@@ -706,7 +706,7 @@ PHASE 4 — Operational hardening (Month 3+)
 ### 4. Brute Force Attack Log
 *`logs/auth_logs.txt` — five consecutive FAIL entries from 192.168.1.10, correctly triggering HIGH severity at the fail_count = 5 threshold.*
 
-![Brute Force Log](screenshots/bruteforce_logs.png)
+![Brute Force Log](screenshots/bruteforce_log.png)
 
 ---
 
