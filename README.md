@@ -775,7 +775,7 @@ cat outputs/alerts.txt
 
 ## 👩‍💻 Author
 
-**Sehba Ashraf**  
+**Sehba Ashraf Bangalath**  
 Cybersecurity Enthusiast | SOC & Detection Engineering Aspirant
 
 [![GitHub](https://img.shields.io/badge/GitHub-SehbaAshrafBangalath-black?style=flat&logo=github)](https://github.com/SehbaAshrafBangalath)
