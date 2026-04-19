@@ -42,6 +42,7 @@ Alert Generation System
         ↓
 SOC Report / Outputs
 
+```
 ---
 
 
@@ -51,18 +52,22 @@ SOC Report / Outputs
 ![Structure](screenshots/tree.png)
 
 🔍 Detection Modules
+
 🔴 1. Brute Force Detection
 
-Detects repeated failed authentication attempts from a single source IP.
+- Detects repeated failed authentication attempts from a single source IP.
+
 
 Logic:
 
-Counts FAIL occurrences
-Triggers alert if threshold exceeded
+- Counts FAIL occurrences
+- Triggers alert if threshold exceeded
 
-Outcome:
+** Outcome:**
 
 Identifies potential password-guessing attacks
+
+
 🟡 2. Abnormal Input Detection
 
 Detects suspicious payloads in input logs.
