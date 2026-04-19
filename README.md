@@ -141,7 +141,7 @@ soc-detection-engine/
 
 **Simulated Log — `logs/auth_logs.txt`:**
 
-![Brute Force Auth Log](screenshots/auth_logs.png)
+![Brute Force Auth Log](screenshots/bruteforce_logs.png)
 
 ```
 192.168.1.10 FAIL
@@ -233,7 +233,7 @@ tags:
 
 **Simulated Log — `logs/abnormal_input.log`:**
 
-![Abnormal Input Log](screenshots/abnormal_input_log.png)
+![Abnormal Input Log](screenshots/log_io_abnormal_input.png)
 
 ```
 192.168.1.10 OK
@@ -322,7 +322,7 @@ tags:
 
 **Simulated Log — `logs/rapid_action.log`:**
 
-![Rapid Action Log](screenshots/rapid_action_log.png)
+![Rapid Action Log](screenshots/rapid_log.png)
 
 ```
 192.168.1.10 REQUEST  ← ×20 entries
@@ -680,14 +680,14 @@ PHASE 4 — Operational hardening (Month 3+)
 ### 2. Engine Execution
 *Full engine run — SOC ENGINE STARTED banner, all three detectors invoked, alerts printed to terminal.*
 
-![Engine Run](screenshots/engine_run.png)
+![Engine Run](screenshots/02_soc_engine_run.png)
 
 ---
 
 ### 3. Alert Output File
 *Contents of `outputs/alerts.txt` — multiple timestamped runs showing correct severity classification across all three detectors, demonstrating append-mode persistence.*
 
-![Alert Output](screenshots/alert_output.png)
+![Alert Output](screenshots/03_alerts_output.png)
 
 ```
 ✔ NORMAL: No suspicious activity
@@ -706,21 +706,21 @@ PHASE 4 — Operational hardening (Month 3+)
 ### 4. Brute Force Attack Log
 *`logs/auth_logs.txt` — five consecutive FAIL entries from 192.168.1.10, correctly triggering HIGH severity at the fail_count = 5 threshold.*
 
-![Brute Force Log](screenshots/auth_logs.png)
+![Brute Force Log](screenshots/bruteforce_logs.png)
 
 ---
 
 ### 5. Abnormal Input Log
 *`logs/abnormal_input.log` — contains three distinct attack payload types: oversized garbage string, XSS script tag, and SQL injection pattern.*
 
-![Abnormal Input Log](screenshots/abnormal_input_log.png)
+![Abnormal Input Log](screenshots/log_io_abnormal_input.png)
 
 ---
 
 ### 6. Rapid Action Log
 *`logs/rapid_action.log` — 20 sequential REQUEST entries from 192.168.1.10 simulating bot-driven automated traffic.*
 
-![Rapid Action Log](screenshots/rapid_action_log.png)
+![Rapid Action Log](screenshots/rapid_log.png)
 
 ---
 
